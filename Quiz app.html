@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRACTICE</title>
+  </head>
+
+  <body>
+    <form>
+      <div>
+        <fieldset>
+          <p>What is its soluction?? 2+5+5</p>
+          <input type="radio" name="math_question" id="q1-a1" />10<br />
+          <input type="radio" name="math_question" id="q1-a2" />12<br />
+          <input type="radio" name="math_question" id="q-a3" />14<br />
+          <input type="radio" name="math_question" id="q-a4" />none of these<br />
+        </fieldset>
+      </div>
+    </form>
+    <br />
+    <br />
+    <form>
+      <div>
+        <fieldset>
+          <p>What is its soluction?? 2.5*100</p>
+          <input type="radio" name="math_question" id="q2-a1" />2500<br />
+          <input type="radio" name="math_question" id="q2-a2" />250<br />
+          <input type="radio" name="math_question" id="q2-a3" />25<br />
+          <input type="radio" name="math_question" id="q2-a4" />2.5<br />
+        </fieldset>
+      </div>
+    </form>
+
+    <br />
+    <br />
+    <form>
+      <div>
+        <fieldset>
+          <p>Who is the founder of Pakistan??</p>
+          <input type="radio" name="math_question" id="q3-a1" />Allama Iqbal<br />
+          <input type="radio" name="math_question" id="q3-a2" />Liquat Ali
+          Khan<br />
+          <input
+            type="radio"
+            name="math_question"
+            id="q3-a3"
+          />Quid-e-Azam<br />
+          <input type="radio" name="math_question" id="q3-a4" />Sir Syed Ahmad
+          Ali Khan<br />
+        </fieldset>
+      </div>
+    </form>
+
+    <br />
+    <br />
+    <form>
+      <div>
+        <fieldset>
+          <p>What is its soluction?? 2+6+9</p>
+          <input type="radio" name="math_question" id="q4-a1" />15<br />
+          <input type="radio" name="math_question" id="q4-a2" />17<br />
+          <input type="radio" name="math_question" id="q4-a3" />18<br />
+          <input type="radio" name="math_question" id="q4-a4" />20<br />
+        </fieldset>
+      </div>
+    </form>
+
+    <br />
+    <br />
+    <form>
+      <div>
+        <fieldset>
+          <p>Who is the Poetier of our Pakistan??</p>
+          <input type="radio" name="math_question" id="q5-a1" />Allama Iqbal<br />
+          <input type="radio" name="math_question" id="q5-a2" />Liquat Ali
+          Khan<br />
+          <input
+            type="radio"
+            name="math_question"
+            id="q5-a3"
+          />Quid-e-Azam<br />
+          <input type="radio" name="math_question" id="q5-a4" />none of these<br />
+        </fieldset>
+      </div>
+    </form>
+    <br />
+    <br />
+    <button class="btn" onclick="check()">See Result</button>
+  </body>
+</html>
+<style>
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+
+  fieldset {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    border-color: rgb(72, 255, 0);
+  }
+
+  button {
+    color: black;
+    background-color: cyan;
+    border-radius: 1rem;
+    height: 30px;
+    width: 90px;
+    border-style: initial;
+  }
+</style>
+<script>
+  function check() {
+    let score = 0;
+    const q1_answer_1 = document.getElementById("q1-a1");
+    const right_answer_1 = document.getElementById("q1-a2");
+    const q1_answer_3 = document.getElementById("q1-a3");
+    const q1_answer_4 = document.getElementById("q1-a4");
+    if (right_answer_1.checked == true) {
+      alert("Q1 answer is true" + name);
+      score++;
+    } else alert("Q1 answer is false");
+
+    const q2_answer_1 = document.getElementById("q2-a1");
+    const right_answer_2 = document.getElementById("q2-a2");
+    const q2_answer_3 = document.getElementById("q2-a3");
+    const q2_answer_4 = document.getElementById("q2-a4");
+    if (right_answer_2.checked == true) {
+      alert("Q2 answer is true");
+      score++;
+    } else alert("Q2 answer is false");
+    const q3_answer_1 = document.getElementById("q3-a1");
+    const q3_answer_2 = document.getElementById("q3-a2");
+    const right_answer_3 = document.getElementById("q3-a3");
+    const q3_answer_4 = document.getElementById("q3-a4");
+    if (right_answer_3.checked == true) {
+      alert("Q3 answer is true");
+      score++;
+    } else alert("Q3 answer is false");
+    const q4_answer_1 = document.getElementById("q4-a1");
+    const right_answer_4 = document.getElementById("q4-a2");
+    const q4_answer_3 = document.getElementById("q4-a3");
+    const q4_answer_4 = document.getElementById("q4-a4");
+    if (right_answer_4.checked == true) {
+      alert("Q4 answer is true");
+      score++;
+    } else alert("Q4 answer is false");
+    const right_answer_5 = document.getElementById("q5-a1");
+    const q5_answer_2 = document.getElementById("q5-a2");
+    const q5_answer_3 = document.getElementById("q5-a3");
+    const q5_answer_4 = document.getElementById("51-a4");
+    if (right_answer_5.checked == true) {
+      alert("Q5 answer is true");
+      score++;
+    } else alert("Q5 answer is false");
+    alert("Your score is  " + score++);
+  }
+</script>
+<link rel="stylesheet" href="https://github.com/bilal882s/bilal.git/" />

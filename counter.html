@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>👩🏾‍💻👨🏾‍💻🧑🏾‍💻</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Counter</h1>
+        <span id="value">0</span>
+        <div class="btn-container">
+          <button class="btn decrease">Decrese</button>
+          <button class="btn reset">Reset</button>
+          <button class="btn increase">Increase</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+    h1 {
+      color: black;
+      margin-top: 10rem;
+      margin-left: 33rem;
+      margin-right: 50rem;
+      font-size: 4rem;
+      display: flex;
+    }
+    span {
+      color: black;
+      margin-top: 5rem;
+      margin-left: 48.5%;
+      font-size: 4rem;
+    }
+    button.btn.decrease {
+      color: #000000;
+      background-color: rgb(253, 253, 253);
+      border: 3px solid rgb(7, 7, 7);
+      height: 47px;
+      width: 105px;
+      margin-left: 32rem;
+      border-radius: 2rem;
+    }
+    button.btn.reset {
+      color: #000000;
+      background-color: rgb(253, 253, 253);
+      border: 3px solid rgb(7, 7, 7);
+      height: 47px;
+      width: 105px;
+      border-radius: 2rem;
+    }
+    button.btn.increase {
+      color: #000000;
+      background-color: rgb(253, 253, 253);
+      border: 3px solid rgb(7, 7, 7);
+      height: 47px;
+      width: 105px;
+      border-radius: 2rem;
+    }
+    button.btn.decrease:hover {
+      color: wheat;
+      background-color: red;
+      border: 3px solid rgb(57, 255, 7);
+    }
+    button.btn.reset:hover {
+      color: wheat;
+      background-color: rgb(0, 0, 0);
+      border: 3px solid rgb(25, 0, 255);
+    }
+    button.btn.increase:hover {
+      color: wheat;
+      background-color: rgb(21, 255, 0);
+      border: 3px solid #ff0037;
+    }
+  </style>
+  <script>
+    // set initial count
+    let count = 0;
+
+    // select value and buttons
+    const value = document.querySelector("#value");
+    const btns = document.querySelectorAll(".btn");
+
+    btns.forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        const styles = e.currentTarget.classList;
+        if (styles.contains("decrease")) {
+          count--;
+        } else if (styles.contains("increase")) {
+          count++;
+        } else {
+          count = 0;
+        }
+        if (count > 0) {
+          value.style.color = "green";
+        }
+        if (count < 0) {
+          value.style.color = "red";
+        }
+        if (count === 0) {
+          value.style.color = "#222";
+        }
+        value.textContent = count;
+      });
+    });
+  </script>
+</html>
+<link rel="stylesheet" href="https://github.com/bilal882s/bilal.git/" />
